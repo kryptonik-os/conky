@@ -1,0 +1,44 @@
+conky.config = {
+	background = true,
+	update_interval = 1,
+	total_run_times = 0,
+	net_avg_samples = 2,
+	override_utf8_locale = true,
+	double_buffer = true,
+	no_buffers = true,
+	own_window_class = 'Conky',
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_argb_visual = true,
+    own_window_argb_value = 0,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	border_inner_margin = 0,
+	border_outer_margin = 0,
+	minimum_width = 1030, minimum_height = 1000,
+	maximum_width = 1030,
+	alignment = 'top_left',
+	gap_x = 10,
+	gap_y = 10,
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
+	use_xft = true,
+	font = 'LCDMono2:size=8.1',
+	xftalpha = 1.0,
+	default_color = 'FFFFFF',
+	uppercase = false,
+	use_spacer = 'none',
+	lua_load = '$HOME/.Conky/revolutionary_clocks/rev_hd/cups_n_saucers.lua',
+	lua_draw_hook_post = 'main',
+}
+
+conky.text = [[
+${goto 535}${voffset 390}${font caviar dreams:bold:size=25}${tztime Europe/Paris %H:%M}
+${goto 490}${voffset 0}${font caviar dreams:size=15}${time %a}
+${voffset -25}${goto 540}${font caviar size=15}${time %d}
+${goto 565}${voffset -25}${font caviar dreams:size=15}${time %b %Y}
+
+
+]]
