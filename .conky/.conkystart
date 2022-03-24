@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sleep 5
-conky -c /home/user/.conky/.conkyrc
-
-exit
